@@ -19,11 +19,13 @@ const UserSchema = new mongoose.Schema({
         max:50,
         unique:true
     },
-    lastName:{
-        type: String,
+
+    password:{
+        type:String,
         require:true,
-        min:5,
+        // min:5,
     },
+   
 
     picturePath:{
         type: String,
